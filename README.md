@@ -9,3 +9,12 @@
 ![Halaman Login](img2.png)
 ![Login berhasil](img3.png)
 ![Halaman user admin](img4.png)
+
+Pertemuan 4
+
+Operasi CRUD dengan API CodeIgniter 4
+
+Screenshot Hasil
+![img5](img5.png)
+![img6](img6.png)
+![img7](img7.png)

@@ -6,20 +6,16 @@ class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
-  // ignore: library_private_types_in_public_api
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
   final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  // ignore: prefer_typing_uninitialized_variables
   var namauser;
 
   void _saveUsername() async {
-    // Inisialisasi Shared Preferences
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    // Simpan Username ke local storage
     prefs.setString('username', _usernameController.text);
   }
 
@@ -86,13 +82,13 @@ class _LoginPageState extends State<LoginPage> {
                     _passwordController.text == 'admin') {
                   _saveUsername();
 
-                  // Show alert
+
                   _showDialog(
                     'Anda Berhasil Login',
                     const HomePage(),
                   );
                 } else {
-                  // Show alert
+
                   _showDialog(
                     'Username dan Password Salah',
                     const LoginPage(),

@@ -6,22 +6,17 @@ class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _HomePageState createState() => _HomePageState();
 }
 
 class _HomePageState extends State<HomePage> {
-  // ignore: prefer_typing_uninitialized_variables
   var namauser;
 
   void _loadUsername() async {
-    // Inisialisasi shared preferences
     SharedPreferences prefs = await SharedPreferences.getInstance();
 
-    // Ambil Username yang sudah tersimpan
     namauser = prefs.getString('username');
 
-    // Set username on UI
     setState(() {});
   }
 
